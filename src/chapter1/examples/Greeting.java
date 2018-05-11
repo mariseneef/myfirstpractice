@@ -14,7 +14,16 @@ public class Greeting extends Applet {
        g.fillOval(135,135,70,70);
        g.setColor(Color.red);
        g.fillOval(150,150,40,40);
-       g.drawString("10", 150,150);
-
+       g.setColor(Color.BLACK);
+        g.drawString("10", 163,134);
+        Graphics evert = g;
+        evert.setColor(Color.red);
+        evert.draw3DRect(12, 12, 100, 10, true);
+        System.out.println("color of g="+g.getColor());
+//        for(int x=0;x<400; x=x+40){
+//            for(int y=0;y<400;y=y+40){
+//                g.drawString(""+x+"."+y, x, y);
+//            }
+//        }
     }
 }
